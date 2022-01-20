@@ -4,6 +4,7 @@
 
 ## Algorithms
 
+* [Sliding Window](algorithms/sliding-window.md)
 * [Untitled](algorithms/untitled.md)
 
 ## C++
