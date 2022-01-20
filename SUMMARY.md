@@ -7,6 +7,7 @@
 * [Binary Search Tree](algorithms/binary-search-tree.md)
 * [Sliding Window](algorithms/sliding-window.md)
 * [Untitled](algorithms/untitled.md)
+* [Ad-Hoc Methods](algorithms/ad-hoc-methods.md)
 
 ## C++
 
