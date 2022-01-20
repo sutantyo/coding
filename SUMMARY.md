@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Page 2](README.md)
+* [Initial page](<README (1).md>)
 
 ## Algorithms
 
@@ -17,3 +18,7 @@
 ## Java
 
 * [Input and Output](java/input-and-output.md)
+
+## Tricks
+
+* [Mathematical](tricks/mathematical.md)
