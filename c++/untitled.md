@@ -1,6 +1,6 @@
 # Sorting
 
-```
+```cpp
 // suppose we want to sort a vector of strings
 vector<string> v;
 
