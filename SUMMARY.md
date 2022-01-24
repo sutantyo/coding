@@ -4,6 +4,7 @@
 
 ## Data Structures
 
+* [Linked List](data-structures/linked-list.md)
 * [Binary Tree](data-structures/binary-tree.md)
 * [Binary Search Tree](data-structures/binary-search-tree.md)
 * [Graph](data-structures/graph.md)
