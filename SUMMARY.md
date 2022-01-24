@@ -14,6 +14,8 @@
 * [Sliding Window](algorithms/sliding-window.md)
 * [Ad-Hoc Methods](algorithms/ad-hoc-methods.md)
 * [Greedy](algorithms/greedy.md)
+* [Binary Search](algorithms/binary-search.md)
+* [Sorting](algorithms/sorting.md)
 
 ## Tricks
 
