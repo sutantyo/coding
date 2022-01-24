@@ -1,27 +1,27 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-struct Node{
-	int data;
-	Node* left;
-	Node* right;	
+struct node{
+  int data;
+  node* left;
+  node* right;
+
+  node(int data) : data(data), left(nullptr), right(nullptr) {};
 };
 
-void in_order(Node*);
+void in_order(node*);
 
 int main(int argc, char* argv[]){
 
-	Node* root = new Node{5,NULL,NULL};
-	root->right = new Node{7,NULL,NULL};
-	root->left = new Node{3,NULL,NULL};
+	node* root = new node(5);
+	root->right = new node(7);
+	root->left = new node(3);
 
-	in_order(root);
-	cout << endl;
-
+	in_order(root);	cout << endl;
 }
 
-void in_order(Node* current){
-	if (current == NULL)
+void in_order(node* current){
+	if (current == nullptr)
 		return;
 	in_order(current->left);
 	cout << current->data << " ";

@@ -1,14 +1,42 @@
 # Binary Search Tree
 
-Assume the following struct definition for the Binary Search Tree:
+### C++ implementation
 
 ```cpp
-struct Node{
+struct node{
   int data;
-  Node* left;
-  Node* right;
+  node* left;
+  node* right;
+
+  node(int data) : data(data), left(nullptr), right(nullptr) {};
 };
 ```
+
+### Converting a sorted array to a binary search tree
+
+**Algorithm**: choose the middle element of the array as the root
+node, then recursively build the left and right subtrees using
+the left and right subarrays (we pass the starting and
+end indices of the subarrays).
+
+```cpp
+node* create_bst_from_sorted_array(vector<int> &nums){
+    return create_tree(nums,0,nums.size()-1);
+}
+
+node* create_tree(vector<int> &nums, int start, int end){
+    if (start > end)
+        return nullptr;
+    int mid = (start+end)/2;
+    node* cur = new node(nums[mid]);
+    cur->left = create_tree(nums,start,mid-1);
+    cur->right = create_tree(nums,mid+1,end);
+    
+    return cur;
+}
+```
+Relevant questions:
+- https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/submissions/
 
 ### Deleting a node
 
