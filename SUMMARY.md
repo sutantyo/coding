@@ -1,18 +1,21 @@
 # Table of contents
 
-* [Page 2](README.md)
-* [Initial page](<README (1).md>)
+* [Initial page](README.md)
 
 ## Algorithms
 
-* [Binary Search Tree](algorithms/binary-search-tree.md)
 * [Sliding Window](algorithms/sliding-window.md)
 * [Untitled](algorithms/untitled.md)
 * [Ad-Hoc Methods](algorithms/ad-hoc-methods.md)
 
+## Data Structures
+
+* [Binary Tree](data-structures/binary-tree.md)
+* [Binary Search Tree](data-structures/binary-search-tree.md)
+* [Graph](data-structures/graph.md)
+
 ## C++
 
-* [Page 1](c++/page-1.md)
 * [Sorting](c++/untitled.md)
 
 ## Java
