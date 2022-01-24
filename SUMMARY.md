@@ -11,6 +11,7 @@
 
 ## Algorithms
 
+* [Recursive Backtracking](algorithms/recursive-backtracking.md)
 * [Sliding Window](algorithms/sliding-window.md)
 * [Ad-Hoc Methods](algorithms/ad-hoc-methods.md)
 * [Greedy](algorithms/greedy.md)
