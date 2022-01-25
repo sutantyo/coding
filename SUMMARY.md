@@ -20,6 +20,8 @@
 * [Dynamic Programming](algorithms/dynamic-programming.md)
 * [DP - Longest Increasing Subsequence](algorithms/dp-longest-increasing-subsequence.md)
 * [DP - Kadane's Algorithm](algorithms/dp-kadanes-algorithm.md)
+* [Mathematics](algorithms/mathematics.md)
+* [Math - Prime Numbers](algorithms/math-prime-numbers.md)
 
 ## Tricks
 
