@@ -17,6 +17,9 @@
 * [Greedy](algorithms/greedy.md)
 * [Binary Search](algorithms/binary-search.md)
 * [Sorting](algorithms/sorting.md)
+* [Dynamic Programming](algorithms/dynamic-programming.md)
+* [DP - Longest Increasing Subsequence](algorithms/dp-longest-increasing-subsequence.md)
+* [DP - Kadane's Algorithm](algorithms/dp-kadanes-algorithm.md)
 
 ## Tricks
 
