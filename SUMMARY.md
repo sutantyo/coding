@@ -22,6 +22,8 @@
 * [DP - Kadane's Algorithm](algorithms/dp-kadanes-algorithm.md)
 * [Mathematics](algorithms/mathematics.md)
 * [Math - Prime Numbers](algorithms/math-prime-numbers.md)
+* [Math - Geometry](algorithms/math-geometry.md)
+* [Math - Matrices](algorithms/math-matrices.md)
 
 ## Tricks
 
