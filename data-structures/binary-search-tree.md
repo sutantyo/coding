@@ -36,58 +36,61 @@ node* create_tree(vector<int> &nums, int start, int end){
 }
 ```
 Relevant questions:
-- https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/submissions/
+- [https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/submissions/](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/submissions/)
+
 
 ### Deleting a node
 
+It is easy to delete a node with no children or with only one 
+child, since we just replace the deleted node with null or
+its child. However, if the node to be deleted has two children,
+then we need to replace it with its descendant, either
+the next largest or the next smallest value. In the following code,
+we choose the next largest element.
+
 ```cpp
-    Node* deleteNode(Node* root, int value) {
+node* delete_node(node* cur, int value) {
      
-        // if root is null, then there is nothing to delete
-        if (root == NULL)
+    // if root is null, then there is nothing to delete
+    if (root == NULL)
+        return NULL;
+
+    // if the root contains the value we need to delete
+    if (key == root->data){
+        
+        // simpler cases (0 or 1 children)
+        if (root->left == NULL && root->right == NULL)
             return NULL;
+        if (root->left == NULL)
+            return root->right;
+        if (root->right == NULL)
+            return root->left;
 
-        // if the root contains the value we need to delete, this is
-        // where we have to do the most work
-        if (key == root->data){
-            
-            // these are the simpler cases when one of the children
-            // is null, because we can just set root to be the non-null 
-            // child (or just set root to null if both children are null)
-            if (root->left == NULL && root->right == NULL)
-                return NULL;
-            if (root->left == NULL)
-                return root->right;
-            if (root->right == NULL)
-                return root->left;
+        // otherwise, find the next largest value
+        // and set it to be this node's value
+        root->data = find_next_largest(root->right);
 
-            // otherwise, we have to find the next largest value in the BST
-            // that is on the right side of the tree and put that value into 
-            // root (figuratively, we're swapping the root node with the next largest node)
-            root->data = findNextLargest(root->right);
-
-            // next, we need to delete the node with that value
-            root->right = deleteNode(root->right,root->data);
-            return root;
-        }
-        
-        // if the value in the root node is not the one that we have to delete,
-        // then we have to go find the value in the tree:
-        if (key < root->data){
-            root->left = deleteNode(root->left,key);
-            return root;
-        }
-        root->right = deleteNode(root->right,key);
+        // then delete the node with that value 
+        root->right = delete_node(root->right,root->data);
         return root;
-        
     }
+
+    // otherwise, traverse the tree to find the node with the
+    // value we have to delete
+    if (key < root->data){
+        root->left = delete_node(root->left,key);
+        return root;
+    }
+    root->right = delete_node(root->right,key);
+    return root;
     
-    int findNextLargest(Node* cur){
-        // next largest element should have no left child, so, just keep going left
-        // until we can't
-        if (cur -> left == NULL)
-            return cur->data;
-        else
-            return findNextLargest(cur->left);
     }
+
+int find_next_largest(node* cur){
+    // the next largest element in a BST is the leftmost node
+    if (cur->left == NULL)
+        return cur->data;
+    else
+        return find_next_largest(cur->left);
+}
 ```
