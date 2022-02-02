@@ -7,23 +7,26 @@
 * [Linked List](data-structures/linked-list.md)
 * [Binary Tree](data-structures/binary-tree.md)
 * [Binary Search Tree](data-structures/binary-search-tree.md)
+* [Trie](data-structures/trie.md)
 * [Graph](data-structures/graph.md)
 
 ## Algorithms
 
-* [Recursive Backtracking](algorithms/recursive-backtracking.md)
 * [Sliding Window](algorithms/sliding-window.md)
-* [Ad-Hoc Methods](algorithms/ad-hoc-methods.md)
-* [Greedy](algorithms/greedy.md)
 * [Binary Search](algorithms/binary-search.md)
 * [Sorting](algorithms/sorting.md)
-* [Dynamic Programming](algorithms/dynamic-programming.md)
-* [DP - Longest Increasing Subsequence](algorithms/dp-longest-increasing-subsequence.md)
-* [DP - Kadane's Algorithm](algorithms/dp-kadanes-algorithm.md)
-* [Mathematics](algorithms/mathematics.md)
-* [Math - Prime Numbers](algorithms/math-prime-numbers.md)
-* [Math - Geometry](algorithms/math-geometry.md)
-* [Math - Matrices](algorithms/math-matrices.md)
+* [Recursive Backtracking](algorithms/recursive-backtracking.md)
+* [Ad-Hoc Methods](algorithms/ad-hoc-methods.md)
+* [Greedy](algorithms/greedy.md)
+* [Dynamic Programming](algorithms/dynamic-programming/README.md)
+  * [DP - Longest Increasing Subsequence](algorithms/dynamic-programming/dp-longest-increasing-subsequence.md)
+  * [DP - Kadane's Algorithm](algorithms/dynamic-programming/dp-kadanes-algorithm.md)
+* [Mathematics](algorithms/mathematics/README.md)
+  * [Math - Geometry](algorithms/mathematics/math-geometry.md)
+  * [Math - Prime Numbers](algorithms/mathematics/math-prime-numbers.md)
+  * [Math - Matrices](algorithms/mathematics/math-matrices.md)
+* [Graph](algorithms/graph/README.md)
+  * [DFS](algorithms/graph/dfs.md)
 
 ## Tricks
 
