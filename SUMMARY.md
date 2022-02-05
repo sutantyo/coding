@@ -34,7 +34,10 @@
 
 ## C++
 
-* [Sorting](c++/untitled.md)
+* [Algorithm](c++/untitled.md)
+* [Priority Queue](c++/priority-queue.md)
+* [Queue / Stack](c++/queue-stack.md)
+* [Vector / Map / Set](c++/vector-map-set.md)
 
 ## Java
 
