@@ -9,6 +9,7 @@ C++ `priority_queue` is implemented as a max-heap and can perform comparison on 
 
 priority_queue< pair<int,pair<char,int>> > pq;
 pq.push(make_pair(3,make_pair('c',1)));
+// alternatively: pq.emplace(3,make_pair('c',1));
 pq.push(make_pair(5,make_pair('a',2)));
 pq.push(make_pair(3,make_pair('a',4)));
 pq.push(make_pair(5,make_pair('b',4)));
