@@ -28,8 +28,10 @@
 * [Graph](algorithms/graph/README.md)
   * [DFS](algorithms/graph/dfs.md)
   * [BFS](algorithms/graph/bfs.md)
+  * [Topological Sort](algorithms/graph/topological-sort.md)
   * [Shortest Path](algorithms/graph/shortest-path.md)
   * [All-Pairs Shortest Path](algorithms/graph/all-pairs-shortest-path.md)
+* [Binary Tree](algorithms/binary-tree.md)
 
 ## Tricks
 
