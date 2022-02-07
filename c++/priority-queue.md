@@ -1,6 +1,10 @@
 # Priority Queue
 
-C++ `priority_queue` is implemented as a max-heap and can perform comparison on basic data types (including `pair` objects). See the next example to see how the ordering is done with `pair` objects.
+C++ `priority_queue` is implemented as a max-heap and 
+can perform comparison on basic data types 
+(including `pair` objects). 
+See the next example to see how the ordering is done 
+with `pair` objects.
 
 ### Basic operations:
 

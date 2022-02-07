@@ -47,7 +47,6 @@ int main(int argc, char* argv[]){
 		}
 		if (!pq.empty()){
 			time = time + pq.top().p_time;
-			cout << pq.top().id << " " << pq.top().q_time << " " << pq.top().p_time << endl;
 			pq.pop();
 		}
 	} while(!pq.empty() || (index < input.size()));

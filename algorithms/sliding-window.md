@@ -6,7 +6,8 @@ Sliding window is a general-problem solving technique when we solve the problem 
 
 and we are asked to find largest sum of 5 consecutive integers, which is the subarray `[ 8 , 2 , 6 , 9 , 11 ]`.
 
-The naive method would be to add up the elements of every subarray of size 5, but this requires 4 additions, while the difference between two consecutive subarrays is just the first and last elements (e.g. the difference between `a[0..4]` and `a[1..5]` is just `a[5]-a[0]`, so instead we can do this:
+The naive method would be to add up the elements of every subarray of size 5, but this requires 4 additions, while the difference between two consecutive subarrays is just the first and last elements (e.g. the difference between `a[0..4]` and `a[1..5]` is just `a[5]-a[0]`, so instead we should do the
+following:
 
 ```cpp
 int a[] = {8,5,3,8,2,6,9,11,2,3,7,11,9};
@@ -22,9 +23,17 @@ for(int i = 5; i < a.size(); i++){
 return best;
 ```
 
-### Finding subarrays with the same elements
+## Finding subarrays with the same elements
 
-Suppose that we are given an array `a` and asked to find how many subarrays in another array `b` has the same elements, then we can do this using a frequency count.
+Suppose that we are given an array `a` and are asked 
+to find how many subarrays in another array `b` has
+the same elements.
+For example, if `b = [4,2,1,3,4,3,2,1,1]`
+and `a = [1,2,3,4]`, then there
+are three subarrays that has the same elements as `a`
+(namely `[4,2,1,3]`, `[2,1,3,4]`, and `[4,3,2,1]`).
+To solve this problem, we can combine the sliding
+window method with frequency count:
 
 ```cpp
 // search how many subarrays of s have the same elements
@@ -52,7 +61,9 @@ vector<int> search(vector<char> s, vector<char> p) {
       // remove first character from previous subarray
       // from the count, and add the count for the last
       // character
-      // (remove mapping to 0, so the map comparison works)
+
+      // we also need to remove mapping to zero so the
+      // map comparison works
       if (s_count[s[i-1]] == 1)
           s_count.erase(s[i-1]);
       else
