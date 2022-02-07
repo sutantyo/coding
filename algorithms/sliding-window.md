@@ -2,17 +2,11 @@
 
 Sliding window is a general-problem solving technique when we solve the problem by looking at part of the data at a time. It is probably best explained using an example; suppose that we are given an array
 
-`[  8 , 5 , 3 , 8 , 2 , 6 , 9 , 11 , 2 , 3 , 7 , 11 , 9 ]`
+`[ 8 , 5 , 3 , 8 , 2 , 6 , 9 , 11 , 2 , 3 , 7 , 11 , 9 ]`
 
-and we are asked to find largest sum of 5 consecutive integers,
- which is the subarray `[ 8 , 2 , 6 , 9 , 11 ]`.
+and we are asked to find largest sum of 5 consecutive integers, which is the subarray `[ 8 , 2 , 6 , 9 , 11 ]`.
 
-The naive method would be to add up the elements of every
- subarray of size 5, but this requires 4 additions, while
- the difference between two consecutive subarrays is just
- the first and last elements
- (e.g. the difference between `a[0..4]` and `a[1..5]` 
- is just `a[5]-a[0]`, so instead we can do this:
+The naive method would be to add up the elements of every subarray of size 5, but this requires 4 additions, while the difference between two consecutive subarrays is just the first and last elements (e.g. the difference between `a[0..4]` and `a[1..5]` is just `a[5]-a[0]`, so instead we can do this:
 
 ```cpp
 int a[] = {8,5,3,8,2,6,9,11,2,3,7,11,9};
@@ -30,11 +24,9 @@ return best;
 
 ### Finding subarrays with the same elements
 
-If we are given an array `a` and asked to find how many
-subarrays in another array `b` has the same elements, then
-we can do this using a frequency count. 
+Suppose that we are given an array `a` and asked to find how many subarrays in another array `b` has the same elements, then we can do this using a frequency count.
 
-```cpp    
+```cpp
 // search how many subarrays of s have the same elements
 // as p, return the starting indices of all such
 // subarrays
@@ -73,5 +65,3 @@ vector<int> search(vector<char> s, vector<char> p) {
   return ans;
 }
 ```
-
-

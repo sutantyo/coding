@@ -27,6 +27,9 @@
   * [Math - Matrices](algorithms/mathematics/math-matrices.md)
 * [Graph](algorithms/graph/README.md)
   * [DFS](algorithms/graph/dfs.md)
+  * [BFS](algorithms/graph/bfs.md)
+  * [Shortest Path](algorithms/graph/shortest-path.md)
+  * [All-Pairs Shortest Path](algorithms/graph/all-pairs-shortest-path.md)
 
 ## Tricks
 
@@ -38,6 +41,7 @@
 * [Priority Queue](c++/priority-queue.md)
 * [Queue / Stack](c++/queue-stack.md)
 * [Vector / Map / Set](c++/vector-map-set.md)
+* [Misc](c++/misc.md)
 
 ## Java
 
