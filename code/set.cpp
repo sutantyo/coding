@@ -31,6 +31,10 @@ int main(int argc, char* argv[]){
 	}
 	cout << endl;
 
-			
+	set<int> s2 = {1,2,3};
+	set<int> s3 = {2,3,4};
+	set<int> temp;
+	set_intersection(s2.begin(),s2.end(),s3.begin(),s3.end(),inserter(temp,temp.begin()));
+
 
 }

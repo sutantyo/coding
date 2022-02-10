@@ -71,10 +71,10 @@ vector<string> dijkstra(vector<vector<int>> input, int n, int start){
 ```
 
 ## Bellman-Ford
-Bellman-Ford is much easier to write, but can also be much 
-slower. One difference is that we should not use -1 to mark
-unreachable node. In the example below, I use `10000`
-which is probably too small. 
+Bellman-Ford is much easier to write but also slower. 
+Since it is able to work with negative edge weights, 
+we cannot use -1 to mark an unreachable node, so
+in the code below, I use 10,000.
 
 ```cpp
 vector<string> bellman_ford(vector<vector<int>> input, int n, int start){
@@ -101,6 +101,9 @@ algorithms. The graph contains 15 nodes, numbered from
 1 to 15. 
 
 ```cpp
+  // shortest path from node 3:
+  // [24,16,0,49,24,21,22,10,18,26,15,26,25,53,19]
+
 	int nodes = 15;
 	vector<vector<int>> input = 
 		{	{10,9,79},{15,10,58},{14,4,99},{14,12,29},
