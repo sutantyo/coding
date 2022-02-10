@@ -6,7 +6,6 @@
 
 * [Linked List](data-structures/linked-list.md)
 * [Binary Tree](data-structures/binary-tree.md)
-* [Binary Search Tree](data-structures/binary-search-tree.md)
 * [Trie](data-structures/trie.md)
 * [Graph](data-structures/graph.md)
 
@@ -32,6 +31,7 @@
   * [Shortest Path](algorithms/graph/shortest-path.md)
   * [All-Pairs Shortest Path](algorithms/graph/all-pairs-shortest-path.md)
 * [Binary Tree](algorithms/binary-tree.md)
+* [Binary Search Tree](algorithms/binary-search-tree.md)
 
 ## Tricks
 

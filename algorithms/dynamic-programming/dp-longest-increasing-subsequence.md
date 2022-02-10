@@ -1,7 +1,6 @@
 # DP - Longest Increasing Subsequence
 
-```cpp
-
+````cpp
 
 ```https://leetcode.com/problems/best-time-to-buy-and-sell-
 
@@ -22,6 +21,6 @@
                 return true;
         }
         return false;
-```
+````
 
 https://leetcode.com/problems/increasing-triplet-subsequence/submissions/

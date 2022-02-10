@@ -3,21 +3,17 @@
 ## Kahn's Algorithm
 
 Algorithm:
-- find all the nodes with no parents and put it 
-inside a set `S`
-- if `S` is empty, we have a cycle in the graph
-- otherwise while there are nodes in `S`:
-  - pick a node `u` and remove it from S
-  - for each child `v` of `u`:
-    - remove `u` from the list of parents of `v`
-    - if `v` has no more parents, add `v` to `S`
-- if there are still nodes with a parent, then we have
-  a cycle in the graph
-  - reason: if a node `v` still has at least one parent `u`,
-   it means that
-   we never removed `u` either, meaning it still has at least
-   one parent, and so both `u` and `v` must be part of a cycle
-   in the graph
+
+* find all the nodes with no parents and put it inside a set `S`
+* if `S` is empty, we have a cycle in the graph
+* otherwise while there are nodes in `S`:
+  * pick a node `u` and remove it from S
+  * for each child `v` of `u`:
+    * remove `u` from the list of parents of `v`
+    * if `v` has no more parents, add `v` to `S`
+* if there are still nodes with a parent, then we have a cycle in the graph
+  * reason: if a node `v` still has at least one parent `u`, it means that we never removed `u` either, meaning it still has at least one parent, and so both `u` and `v` must be part of a cycle in the graph
+
 ```cpp
 // let v be the vector of pairs 
 //     {{x_0,y_0},{x_1,y_1}, ..., {x_n,y_n}}
@@ -73,25 +69,16 @@ string top_sort(vector<vector<int>>& v){
 
 ## DFS method
 
-Another approach is by performing a DFS from each node with
-no parents. The first few steps are similar to the previous
-algorithm:
-- find all the nodes with no parents and put it 
-inside a set `S`
-- if `S` is empty, we have a cycle in the graph
-- otherwise for each node `u` in `S` start a DFS:
-  - when we arrive at node for the first time, give it 
-   a temporary marker,
-  if we arrive at a node with a temporary marker, 
-  then the graph have a cycle 
-  - if we arrive at a node with a permanent marker, 
-    return
-  - recursively visit each children of this current node
-  - before returning to the previous function call, 
-    remove the temporary marker, and add a permanent marker
-- if at the end there are unmarked nodes, then there is a cycle
-  in the graph (for example, we can have two components in the
-  graph, one has a topological sort, the other is a cycle)
+Another approach is by performing a DFS from each node with no parents. The first few steps are similar to the previous algorithm:
+
+* find all the nodes with no parents and put it inside a set `S`
+* if `S` is empty, we have a cycle in the graph
+* otherwise for each node `u` in `S` start a DFS:
+  * when we arrive at node for the first time, give it a temporary marker, if we arrive at a node with a temporary marker, then the graph have a cycle
+  * if we arrive at a node with a permanent marker, return
+  * recursively visit each children of this current node
+  * before returning to the previous function call, remove the temporary marker, and add a permanent marker
+* if at the end there are unmarked nodes, then there is a cycle in the graph (for example, we can have two components in the graph, one has a topological sort, the other is a cycle)
 
 ```cpp
 map<int,bool> perm_marker;
@@ -147,6 +134,5 @@ bool dfs(int node){
   ans = to_string(current) + " " + ans;
   return result;
 }
-
 
 ```
