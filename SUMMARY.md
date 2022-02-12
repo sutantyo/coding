@@ -40,9 +40,10 @@
   * [Math - Matrices](algorithms/mathematics/math-matrices.md)
 * [Ad-Hoc Methods](algorithms/ad-hoc-methods.md)
 
-## Tricks
+## Misc
 
-* [Mathematical](tricks/mathematical.md)
+* [Review Summary (LeetCode)](misc/review-summary-leetcode.md)
+* [Tricks](misc/mathematical.md)
 
 ## C++
 
