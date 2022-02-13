@@ -5,6 +5,7 @@
 ## Algorithms
 
 * [Arrays](algorithms/arrays/README.md)
+  * [Intervals](algorithms/arrays/intervals.md)
   * [Sliding Window](algorithms/arrays/sliding-window.md)
   * [Subarray Sums](algorithms/arrays/subarray-sums.md)
   * [Finding Area](algorithms/arrays/finding-area.md)
