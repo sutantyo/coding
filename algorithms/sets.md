@@ -66,6 +66,41 @@ void unite(int x, int y){
     link(x) = y;
   }
 }
+```
 
+## Path compression
 
-Source: Antti
+We can rewrite the `find` function so that it updates
+each node's link to its representative:
+```cpp
+int find(int x){
+  if (x == list[x]) 
+    return x;
+  return list[x] = find(link[x]);
+}
+```
+
+## Determining if all nodes are connected
+
+To determine if there is only one set left, we
+can have a counter for the number of sets, 
+which starts at `n` (the number of nodes), 
+and reduce it by one every time we perform a
+unite. For example, the following code
+checks if all the nodes in a graph are connected:
+
+```cpp
+// suppose the edges are contained in vector<vector<int>>
+// edges
+
+int count = list.size();
+for(auto& x : edges){
+  if (same(x[0],x[1])) continue;
+
+  unite(x[0],x[1]);
+  if (--count == 1)
+    return true;
+}
+return false;
+
+```
