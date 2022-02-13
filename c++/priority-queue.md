@@ -12,13 +12,13 @@ with `pair` objects.
 // pq of pair<int,pair<char,int>>
 
 priority_queue< pair<int,pair<char,int>> > pq;
-pq.push(make_pair(3,make_pair('c',1)));
+pq.push({3,make_pair('c',1)});
 // alternatively: pq.emplace(3,make_pair('c',1));
-pq.push(make_pair(5,make_pair('a',2)));
-pq.push(make_pair(3,make_pair('a',4)));
-pq.push(make_pair(5,make_pair('b',4)));
-pq.push(make_pair(5,make_pair('b',3)));
-pq.push(make_pair(5,make_pair('b',3))); // duplicates are fine
+pq.push({5,make_pair('a',2)});
+pq.push({3,make_pair('a',4)});
+pq.push({5,make_pair('b',4)});
+pq.push({5,make_pair('b',3)});
+pq.push({5,make_pair('b',3)}); // duplicates are fine
 
 while(!pq.empty()){
   cout << pq.top().first << " " << pq.top().second.first << " ";
@@ -41,13 +41,13 @@ If we instead want a min-heap of basic data types, then the simplest approach is
 ```cpp
 typedef pair<int,pair<char,int>> data
 ...
-priority_queue< data,vector<data>,greater<data> > pq;
-pq.push(make_pair(3,make_pair('c',1)));
-pq.push(make_pair(5,make_pair('a',2)));
-pq.push(make_pair(3,make_pair('a',4)));
-pq.push(make_pair(5,make_pair('b',4)));
-pq.push(make_pair(5,make_pair('b',3)));
-pq.push(make_pair(5,make_pair('b',3))); 
+priority_queue< data,vector<data>,greater<data>> pq;
+pq.push({3,make_pair('c',1)});
+pq.push({5,make_pair('a',2)});
+pq.push({3,make_pair('a',4)});
+pq.push({5,make_pair('b',4)});
+pq.push({5,make_pair('b',3)});
+pq.push({5,make_pair('b',3)}); 
 ```
 
 should now print out
