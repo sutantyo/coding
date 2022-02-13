@@ -28,6 +28,7 @@
   * [DP - 2](algorithms/dynamic-programming/dp-2.md)
   * [DP - 3](algorithms/dynamic-programming/dp-3.md)
 * [Graph](algorithms/graph/README.md)
+  * [Page 1](algorithms/graph/page-1.md)
   * [DFS](algorithms/graph/dfs.md)
   * [BFS](algorithms/graph/bfs.md)
   * [Union-Find](algorithms/graph/sets.md)
