@@ -15,7 +15,6 @@
   * [Sliding Window](algorithms/arrays/sliding-window.md)
   * [Subarray Sums](algorithms/arrays/subarray-sums.md)
   * [Finding Area](algorithms/arrays/finding-area.md)
-* [Sets](algorithms/sets.md)
 * [Binary Tree](algorithms/binary-tree.md)
 * [Binary Search Tree](algorithms/binary-search-tree.md)
 * [Binary Search](algorithms/binary-search.md)
@@ -31,6 +30,7 @@
 * [Graph](algorithms/graph/README.md)
   * [DFS](algorithms/graph/dfs.md)
   * [BFS](algorithms/graph/bfs.md)
+  * [Union-Find](algorithms/graph/sets.md)
   * [Topological Sort](algorithms/graph/topological-sort.md)
   * [Shortest Path](algorithms/graph/shortest-path.md)
   * [All-Pairs Shortest Path](algorithms/graph/all-pairs-shortest-path.md)
@@ -42,6 +42,7 @@
 
 ## Misc
 
+* [Complexity Summary](misc/complexity-summary.md)
 * [Review Summary (LeetCode)](misc/review-summary-leetcode.md)
 * [Tricks](misc/mathematical.md)
 
