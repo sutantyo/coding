@@ -94,3 +94,34 @@ int find_next_largest(node* cur){
         return find_next_largest(cur->left);
 }
 ```
+## Counting number of unique binary search trees
+
+If we have `n` nodes in the BST, then the root
+will have `j` nodes on the left subtree and
+`(n-1-j)` nodes on the right subtree, 
+for `0 <= j < n`,
+with both subtrees being BST themselves.
+For each value of `j`, the number of
+unique BST is the number of unique BST on the left child
+multiplied by the number of unique BST on the right child.
+
+
+```cpp
+    int num_of_trees(int n) {
+        
+        vector<int> count(n+1,0);
+        count[0] = 1;
+        
+        for(int i = 1; i <= n; i++){
+            int sum = 0;
+            for(int j = 0; j <= i-1-j; j++){
+               if (j == i-1-j)
+                   sum += count[j] * count[j];
+               else
+                   sum += 2 * count[j] * count[i-1-j];
+            }
+            count[i] = sum;
+        }
+        return count[n];
+    }
+```
