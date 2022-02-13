@@ -1,4 +1,4 @@
-# DP - Sums
+# Sums
 
 ## Coin Change
 

@@ -1,4 +1,4 @@
-# DP - Kadane's Algorithm
+# Kadane's Algorithm
 
 ### Kadane's Algorithm (Maximum Subarray Sum)
 
