@@ -2,22 +2,18 @@
 
 * [Initial page](README.md)
 
-## Data Structures
-
-* [Linked List](data-structures/linked-list.md)
-* [Trees and Heaps](data-structures/binary-tree.md)
-* [Trie](data-structures/trie.md)
-* [Graph](data-structures/graph.md)
-
 ## Algorithms
 
 * [Arrays](algorithms/arrays/README.md)
   * [Sliding Window](algorithms/arrays/sliding-window.md)
   * [Subarray Sums](algorithms/arrays/subarray-sums.md)
   * [Finding Area](algorithms/arrays/finding-area.md)
+* [Linked List](algorithms/linked-list.md)
 * [Binary Tree](algorithms/binary-tree.md)
 * [Binary Search Tree](algorithms/binary-search-tree.md)
 * [Binary Search](algorithms/binary-search.md)
+* [Trees and Heaps](algorithms/binary-tree-1.md)
+* [Trie](algorithms/trie.md)
 * [Sorting](algorithms/sorting.md)
 * [Recursive Backtracking](algorithms/recursive-backtracking.md)
 * [Greedy](algorithms/greedy.md)
