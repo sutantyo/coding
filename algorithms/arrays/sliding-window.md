@@ -76,3 +76,8 @@ vector<int> search(vector<char> s, vector<char> p) {
   return ans;
 }
 ```
+
+Relevant questions:
+- []
+- [Leetcode 567 - Permutation in Strings](https://leetcode.com/problems/permutation-in-string/)
+

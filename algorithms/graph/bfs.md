@@ -2,6 +2,9 @@
 
 ## Determining if there is a path from a to b
 
+Assume that the edges are given as a vector `{a,b}`
+denoting a path between `a` and `b`.
+
 ```cpp
 bool validPath(int n, vector<vector<int>>& edges, int a, int b) 
     

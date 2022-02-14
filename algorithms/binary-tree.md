@@ -1,6 +1,6 @@
 # Binary Tree
 
-## C++ implementation
+### C++ implementation
 
 ```cpp
 struct node{
@@ -13,4 +13,18 @@ struct node{
 }
 ```
 
-## Counting
+### Traversal
+
+The standard traversal of a binary tree follows the following
+pattern:
+```cpp
+void traverse(node* current){
+  if (current == nullptr)
+    return;
+  traverse(current->left);
+  traverse(current->right);
+}
+
+Relevant questions:
+- [LeetCode 104 - Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+

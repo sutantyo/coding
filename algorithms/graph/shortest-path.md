@@ -1,6 +1,6 @@
 # Shortest Path
 
-## Dijkstra's Algorithm
+### Dijkstra's Algorithm
 
 For the following example, assume the graph is given by
 a vector of triplets `[u,v,w]` denoting that there is
@@ -70,7 +70,7 @@ vector<string> dijkstra(vector<vector<int>> input, int n, int start){
 }
 ```
 
-## Bellman-Ford
+### Bellman-Ford
 Bellman-Ford is much easier to write but also slower. 
 Since it is able to work with negative edge weights, 
 we cannot use -1 to mark an unreachable node, so
@@ -162,3 +162,7 @@ algorithms. The graph contains 15 nodes, numbered from
 		};
 
 ```
+
+### Standard questions
+  - [LeetCode 743 - Network Delay Time](https://leetcode.com/problems/network-delay-time/)
+  - [LeetCode 1631 - Path with Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)
