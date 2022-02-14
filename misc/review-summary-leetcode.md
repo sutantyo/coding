@@ -11,8 +11,8 @@
 * Disjoint Sets:
   * [547 - Number of Provinces](https://leetcode.com/problems/number-of-provinces/)
   * [1101 - The Earliest Moment When Everyone Become Friends](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/)
-* ### DFS:
-* ### BFS:
+* #### DFS:
+* #### BFS:
 * Minimum Spanning Tree
-* ### Shortest Path:
+* #### Shortest Path:
 * Topological Sorting:
