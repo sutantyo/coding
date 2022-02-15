@@ -12,6 +12,7 @@
   * [General Algorithms](algorithms/arrays/general-algorithms.md)
 * [Linked List](algorithms/linked-list.md)
 * [Binary Tree](algorithms/binary-tree/README.md)
+  * [Insertion and Deletion](algorithms/binary-tree/insertion-and-deletion.md)
   * [Traversal](algorithms/binary-tree/traversal.md)
 * [Binary Search Tree](algorithms/binary-search-tree/README.md)
   * [Insertion and Deletion](algorithms/binary-search-tree/insertion-and-deletion.md)
