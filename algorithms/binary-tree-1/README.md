@@ -1,9 +1,0 @@
-# Binary Tree
-
-
-
-### 
-
-
-Relevant questions:
-
