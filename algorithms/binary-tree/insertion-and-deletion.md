@@ -18,7 +18,6 @@ TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
     if (postorder.size() == 0)
         return nullptr;
     
-    // 
     for(int i = 0; i < inorder.size(); i++)
         idx[inorder[i]] = i; 
     

@@ -191,7 +191,7 @@ children returns true.
     }
 ```
 However, if we were to do it many times, then we can do the following
-preprocessing (the Euler tour of a tree) where we note down   
+preprocessing (the Euler tour of the tree) where we note down 
 the node and its height every time we walk through it. 
 ```cpp
 vector<pair<node*,int>> tour; 
@@ -237,8 +237,7 @@ TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
 ```
 We can also use this to find the distance between any two nodes
 in a binary tree, since this is equal to the sum of the distances
-between
-the nodes to their common ancestor.
+between the nodes to their common ancestor.
 
 Relevant questions:
 - [LeetCode 236 - Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
