@@ -72,3 +72,7 @@
 ## Java
 
 * [Input and Output](java/input-and-output.md)
+
+## C# <a href="#csharp" id="csharp"></a>
+
+* [String](csharp/string.md)
