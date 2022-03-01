@@ -76,3 +76,6 @@
 ## C# <a href="#csharp" id="csharp"></a>
 
 * [String](csharp/string.md)
+* [Page 1](csharp/page-1.md)
+* [Page 2](csharp/page-2.md)
+* [Page 3](csharp/page-3.md)
